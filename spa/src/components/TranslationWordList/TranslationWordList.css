@@ -1,0 +1,12 @@
+.add-word-button{
+    height: 50px;
+    width: 50px;
+    background: #1d72aa;
+    display: block;
+    position: absolute;
+    border-radius: 50px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

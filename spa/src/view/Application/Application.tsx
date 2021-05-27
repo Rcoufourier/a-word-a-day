@@ -1,7 +1,12 @@
 import React from "react";
+import TranslationWordList from "../../components/TranslationWordList/TranslationWordList"
+import {Navbar} from "../../components/Navbar/Navbar"
 
-export interface Props {}
-
-export const Application: React.FunctionComponent<Props> = () => {
-  return <div>This is your app!</div>;
+export function Application ()  {
+    return (
+        <>
+            <Navbar/>
+            <TranslationWordList/>
+        </>
+    );
 };
