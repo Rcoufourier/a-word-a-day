@@ -8,6 +8,9 @@ import TimeSlide from "../TimeSlide/TimeSlide";
 
 export default function TranslationWordList() {
     const [word, setWord] = useState<Translation[]>(MockTranslation)
+    const {ActualDuration} = useSlider()
+    const Now = DateTime.local()
+    const Bound = Now.minus(ActualDuration).minus({days: 1})
 
     return (
         <>
