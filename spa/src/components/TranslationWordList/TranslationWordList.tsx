@@ -17,8 +17,7 @@ export default function TranslationWordList() {
                 word.map((data: Translation, datakey: any) => <TranslationItem key={datakey} word={data}/>)
             }
             </div>
-
-            <Link to={"/word/add"} className="add-word-button">
+            <Link to={"/word/add"} className="button add-word-button has-background-info-dark">
                 <i className="fas fa-plus"></i>
             </Link>
         </>

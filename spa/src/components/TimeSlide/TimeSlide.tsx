@@ -3,13 +3,24 @@ import {useSlider} from "../../Hooks/Context/useSlider";
 import {DateTime} from "luxon";
 
 export default function TimeSlide() {
-  const {ActualTimer,Increase,Decrease} = useSlider()
+    const {DisplayDuration, ActualDuration, IncreaseInterval, DecreaseInterval, CreateDuration} = useSlider()
 
-   return (
-       <>
-           <button onClick={Decrease}><i className="fas fa-angle-left"></i></button>
-           <p>{ActualTimer.setLocale('fr-FR').toLocaleString(DateTime.DATE_FULL)}</p>
-           <button onClick={Increase}><i className="fas fa-angle-right"></i></button>
-       </>
-   )
+    CreateDuration(ActualDuration)
+
+
+    return (
+        <div className="time-slider">
+            <button className="button is-info is-rounded" data-e2e={"increase-timeframe"} onClick={IncreaseInterval}>
+                <span className="icon">
+                    <i className="fas fa-angle-left"/>
+                </span>
+            </button>
+            <span className="duration">{DisplayDuration}</span>
+            <button className="button is-info is-rounded" data-e2e={"decrease-timeframe"} onClick={DecreaseInterval}>
+                <span className="icon">
+                    <i className="fas fa-angle-right"/>
+                </span>
+            </button>
+        </div>
+    )
 }

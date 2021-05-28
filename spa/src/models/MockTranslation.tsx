@@ -7,13 +7,13 @@ export const MockTranslation: Translation[] = [
         id: uuid(),
         word: "Bonjour",
         translatedWord: "Hello",
-        createdAt: DateTime.fromObject({year: 2021, month: 5, day: 27})
+        createdAt: DateTime.fromObject({year: 2021, month: 5, day: 26})
     },
     {
         id: uuid(),
         word: "Chat",
         translatedWord: "Cat",
-        createdAt: DateTime.fromObject({year: 2021, month: 5, day: 27})
+        createdAt: DateTime.fromObject({year: 2021, month: 5, day: 28})
     },
     {
         id: uuid(),

@@ -38,7 +38,7 @@ export default function TranslationItemDetails({isedit}: FormProps) {
                 >
                 </input>
                 <input
-                    {...register("translate")}
+                    {...register("translatedWord")}
                     type="text"
                     defaultValue={translation?.translatedWord}
                 >
@@ -49,6 +49,7 @@ export default function TranslationItemDetails({isedit}: FormProps) {
                         <button type="submit">Ajouter</button>
                 }
             </form>
-        </>);
+        </>
+    );
 }
 
