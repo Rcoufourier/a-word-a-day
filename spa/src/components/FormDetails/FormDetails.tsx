@@ -53,3 +53,11 @@ export default function TranslationItemDetails({isedit}: FormProps) {
     );
 }
 
+// ROUTE1
+    // INPUT1
+        //DEFAULT
+    //input2
+        //DEFAULT
+// ROUTE 2
+    // INPUT1
+    //input2

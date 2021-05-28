@@ -4,7 +4,9 @@ import {MockTranslation} from "../../models/MockTranslation";
 import {Link} from "react-router-dom";
 import TranslationItem from "../TranslationItem/TranslationItem";
 import TimeSlide from "../TimeSlide/TimeSlide";
-
+import {useSlider} from "../../Hooks/Context/useSlider";
+import {DateTime} from "luxon";
+import './TranslationWordList.css'
 
 export default function TranslationWordList() {
     const [word, setWord] = useState<Translation[]>(MockTranslation)
@@ -15,10 +17,12 @@ export default function TranslationWordList() {
     return (
         <>
             <TimeSlide/>
-            <div>
-            {
-                word.map((data: Translation, datakey: any) => <TranslationItem key={datakey} word={data}/>)
-            }
+            <div className="word-list"  >
+                {
+                    word.filter(date => date.createdAt > Bound).map((data: Translation, datakey: any) => {
+                            return <TranslationItem key={datakey} word={data}/>
+                    })
+                }
             </div>
             <Link to={"/word/add"} className="button add-word-button has-background-info-dark">
                 <i className="fas fa-plus"></i>

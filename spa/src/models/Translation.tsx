@@ -10,7 +10,7 @@ export class Translation {
     constructor(data : any) {
         this.id = data.id;
         this.word = data.word;
-        this.translatedWord = data.translate;
+        this.translatedWord = data.translatedWord;
         this.createdAt = data.createdAt;
     }
 }

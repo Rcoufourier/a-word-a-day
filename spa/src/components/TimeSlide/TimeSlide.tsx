@@ -1,6 +1,6 @@
 import React from "react"
 import {useSlider} from "../../Hooks/Context/useSlider";
-import {DateTime} from "luxon";
+import './TimeSlide.css'
 
 export default function TimeSlide() {
     const {DisplayDuration, ActualDuration, IncreaseInterval, DecreaseInterval, CreateDuration} = useSlider()
