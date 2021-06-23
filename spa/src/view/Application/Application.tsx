@@ -1,6 +1,6 @@
 import React from "react";
-import TranslationWordList from "../../components/TranslationWordList/TranslationWordList"
-import {Navbar} from "../../components/Navbar/Navbar"
+import TranslationWordList from "../../components/TranslationWordList/TranslationWordList";
+import {Navbar} from "../../components/Navbar/Navbar";
 
 export function Application ()  {
     return (
@@ -9,4 +9,4 @@ export function Application ()  {
             <TranslationWordList/>
         </>
     );
-};
+}

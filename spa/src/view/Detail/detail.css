@@ -1,0 +1,10 @@
+.word-card {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 150px;
+}
+
+.language-container {
+    margin-right: 25px;
+}

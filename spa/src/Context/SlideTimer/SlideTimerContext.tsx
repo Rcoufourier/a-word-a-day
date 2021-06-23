@@ -39,12 +39,12 @@ export const SliderTimerProvider = ({children}: Props) => {
     const Now = DateTime.local()
 
     const CreateDuration = (Test: Duration) => {
-         if (Test.years) {
-             return SetDisplayDuration(Test.years + " an(s)")
-         }
-         if (Test.months) {
-             return SetDisplayDuration(Test.months + " mois")
-         }
+        if (Test.years) {
+            return SetDisplayDuration(Test.years + " an(s)")
+        }
+        if (Test.months) {
+            return SetDisplayDuration(Test.months + " mois")
+        }
         if (Test.weeks) {
             return SetDisplayDuration(Test.weeks + " semaine(s)")
         }

@@ -16,10 +16,10 @@ export default function TranslationItem({word}: ListProps) {
                 <div>{word.word}</div>
             </div>
             <Link to={{
-                pathname: `/word/edit/${word.id}`,
+                pathname: `/detail/${word.id}`,
                 state: {word: word}
             }}>
-                <i className="fas fa-eye has-text-white" />
+                <i className="fas fa-eye has-text-white"/>
             </Link>
         </div>
     );

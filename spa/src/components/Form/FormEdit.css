@@ -1,0 +1,13 @@
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 200px;
+    margin: 150px auto;
+}
+
+input {
+    height: 35px;
+    margin-bottom: 5px;
+}
