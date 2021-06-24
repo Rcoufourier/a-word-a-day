@@ -8,7 +8,7 @@ import Application from "./view/Application";
 import Error404 from "./view/Error404";
 import "./index.css";
 import Detail from "./view/Detail/Detail";
-import TranslationItemDetails from "./components/Form/FormEdit";
+import TranslationItemEdit from "./components/Form/TranslationItemEdit";
 import TranslationItemAdd from "./components/Form/TranslationItemAdd";
 import {SliderTimerProvider} from "./Context/SlideTimer/SlideTimerContext";
 
@@ -20,7 +20,7 @@ ReactDOM.render(
                     <Switch>
                         <Route exact path="/" component={Application}/>
                         <Route exact path="/detail/:id" component={Detail}/>
-                        <Route exact path="/edit/:id" component={TranslationItemDetails}/>
+                        <Route exact path="/edit/:id" component={TranslationItemEdit}/>
                         <Route exact path="/word/add/" component={TranslationItemAdd}/>
                         <Route component={Error404}/>
                     </Switch>

@@ -2,11 +2,11 @@ import React, {useState} from "react";
 import {useHistory} from "react-router";
 import {Translation} from "../../models/Translation";
 import {useForm} from "react-hook-form";
-import './FormEdit.css';
+import './TranslationItemEdit.css';
 import {setLocalStorage} from "../../Service/LocalStorageService";
 import {DateTime} from "luxon";
 
-export default function TranslationItemDetails(props: any) {
+export default function TranslationItemEdit(props: any) {
 let history = useHistory()
     const {register, handleSubmit} = useForm<Translation>()
     const [word] = useState<Translation>(props.location.state.word)

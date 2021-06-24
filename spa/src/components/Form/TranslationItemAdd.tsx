@@ -2,13 +2,13 @@ import React, {useState,} from "react";
 import {Translation} from "../../models/Translation";
 import {Link} from "react-router-dom";
 import {useForm} from "react-hook-form";
-import './FormEdit.css';
+import './TranslationItemEdit.css';
 import {setLocalStorage} from "../../Service/LocalStorageService";
 import {DateTime} from "luxon";
 import {v4 as uuid} from 'uuid';
 
 
-export default function TranslationItemDetails() {
+export default function TranslationItemAdd() {
     const {register, handleSubmit} = useForm<Translation>()
 
     const [state, Toggle] = useState({
